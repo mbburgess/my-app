@@ -24,14 +24,14 @@
   </head>
   <body>
       
-<nav class="nav-collapse">
+<div role="navigation" id="nav" class="nav-collapse">
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Projects</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-</nav>
+</div>
       
       <img src="DRC-Logo.png" alt="DRC Logo" />
     
@@ -50,8 +50,18 @@
             <em>Question 1</em><br />
             Are you 16 years or older?
         </p>   
-    <button type="button" class="btn btn-lg btn-default">Yes</button>
-    <button type="button" class="btn btn-lg btn-default">No</button>
+<div class="radio">
+  <label>
+    <input type="radio" name="age" id="optionsRadios1" value="Yes" checked>
+    Yes
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="age" id="optionsRadios2" value="No">
+    No
+  </label>
+</div>
 
 
                        <p>
