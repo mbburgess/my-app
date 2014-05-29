@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Example of Twitter Bootstrap 3 Collapse Methods</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".toggle-false").click(function(){
+        $("#myCollapsible").collapse({
+            toggle: false
+        });
+    });
+    $(".show-btn").click(function(){
+        $("#myCollapsible").collapse('show');
+    });
+    $(".hide-btn").click(function(){
+        $("#myCollapsible").collapse('hide');
+    });
+    $(".toggle-btn").click(function(){
+        $("#myCollapsible").collapse('toggle');
+    });
+});
+</script>
+<style type="text/css">
+p {
+    background: #F9F9F9;
+    border: 1px solid #E1E1E8;
+    margin: 10px 0;
+    padding: 8px;
+}
+.bs-example{
+	margin: 20px;
+}
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <!-- Trigger Button HTML -->
+    <p>I know what I want to do after high school?
+        </p> 
+    <input type="button" class="btn btn-primary show-btn" value="Yes">
+    <input type="button" class="btn btn-primary hide-btn" value="No">
+    <input type="button" class="btn btn-primary hide-btn" value="Not Sure">
+      
+    
+    <!-- Collapsible Element HTML -->
+    <div id="myCollapsible" data-toggle="buttons">
+<p>I want to:</p>
+  <label class="btn btn-lg btn-primary btn-block" role="button">
+    <input type="checkbox" name="options" id="getajob" value="get a job">
+    Get a job
+  </label>
+    <label class="btn btn-lg btn-primary btn-block" role="button">
+    <input type="checkbox" value="continue my education">
+    Continue my education
+  </label>
+  <label class="btn btn-lg btn-primary btn-block" role="button">
+    <input type="checkbox" value="be involved">
+    Be involved with community activies
+  </label>
+</div>
+    </div>
+</body>
+</html>                                		
