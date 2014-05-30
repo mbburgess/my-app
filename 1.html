@@ -7,50 +7,26 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
-$('#myCollapsible').collapse({
-  toggle: false
-})
-
 $(document).ready(function(){
-    $(".toggle-false").click(function(){
-        $("#myCollapsible").collapse({
-            toggle: false
-        });
-    });
-    $(".show-btn").click(function(){
-        $("#myCollapsible").collapse('show');
-    });
-    $(".hide-btn").click(function(){
-        $("#myCollapsible").collapse('hide');
-    });
-    $(".toggle-btn").click(function(){
-});
-        $("#myCollapsible").collapse('toggle');
-    });
+    $(".show-btn").click(function(){ $("#myCollapsible").collapse('show'); });
+    $(".hide-btn").click(function(){ $("#myCollapsible").collapse('hide'); });
+    $(".toggle-btn").click(function(){ $("#myCollapsible").collapse('toggle'); });
 
-$('#myCollapsible2').collapse({
-  toggle: false
-})
-
-$(document).ready(function(){
-    $(".toggle-false").click(function(){
-        $("#myCollapsible2").collapse({
-            toggle: false
-        });
-    });
-    $(".show2-btn").click(function(){
-        $("#myCollapsible2").collapse('show2');
-    });
-    $(".hide2-btn").click(function(){
-        $("#myCollapsible2").collapse('hide2');
-    });
-    $(".toggle-btn").click(function(){
-});
-        $("#myCollapsible2").collapse('toggle');
-    });
+    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show2'); });
+    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide2'); });
+    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle2'); });
     
-</script>
+    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show3'); });
+    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide3'); });
+    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle3'); });
+    
+    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show4'); });
+    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide4'); });
+    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle4'); });
+});
+</script> 
 <style type="text/css">
 p {
     background: #ffffff;
@@ -61,6 +37,7 @@ p {
 .bs-example{
 	margin: 20px;
 }
+
 </style>
 </head>
 <body>
@@ -68,33 +45,22 @@ p {
 <div id="main-content" style="padding-left:1em;padding-right:1em;">
     
     <h1>DRC Applicaton</h1>
-<div>
     <!-- Trigger Button HTML -->
-    <p>I know what I want to do after high school?
-        </p> 
-    <input type="button" class="btn btn-primary show-btn" value="Yes">
-    <input type="button" class="btn btn-primary hide-btn" value="No">
-    <input type="button" class="btn btn-primary hide-btn" value="Not Sure">
-      
+    <p>I know what I want to do after high school?</p> 
+    <div class="btn-group btn-group-lg" data-toggle="buttons" input-group-lg">
+    <label class="btn btn-primary btn-lg show-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
+    <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
+    <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
+    </div>                                                                                             
     
     <!-- Collapsible Element HTML -->
-    <div id="myCollapsible" data-toggle="buttons">
+    <div id="myCollapsible" class="collapse" data-toggle="buttons">
 <p>I want to:</p>
-  <label class="btn btn-lg btn-primary btn-block" role="button">
-    <input type="checkbox" name="options" id="getajob" value="get a job">
-    Get a job
-  </label>
-    <label class="btn btn-lg btn-primary btn-block" role="button">
-    <input type="checkbox" value="continue my education">
-    Continue my education
-  </label>
-  <label class="btn btn-lg btn-primary btn-block" role="button">
-    <input type="checkbox" value="be involved">
-    Be involved with community activies
-  </label>
+  <label class="btn btn-lg btn-primary btn-block" role="button"><input type="checkbox" name="options" id="getajob" value="get a job">Get a job</label>
+    <label class="btn btn-lg btn-primary btn-block" role="button"><input type="checkbox" value="continue my education">Continue my education</label>
+  <label class="btn btn-lg btn-primary btn-block" role="button"><input type="checkbox" value="be involved">Be involved with community activies</label>
 </div>
-</div>
-<div>
+
 <hr />
                      <p>I am:
         </p>   
@@ -114,55 +80,33 @@ p {
 </div>
 <hr />                                                           
  <p>I have a written IEP Plan:</p>
-<div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline" type="radio" value="Yes">Yes
-</label>
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline" type="radio" value="No">No
-</label>
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
-</label>
+<div class="btn-group btn-group-lg" data-toggle="buttons" input-group-lg">
+    <label class="btn btn-primary btn-lg"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
+    <label class="btn btn-primary btn-lg"><input type="radio" class="checkbox-inline" value="No">No</label>
+    <label class="btn btn-primary btn-lg"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
 </div>
-    <hr />  
+<div>
  <p>I attend my IEP Meetings</p>
-            <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline" type="radio" value="Yes">Yes
-</label>
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline" type="radio" value="No">No
-</label>
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
-</label>
+<div class="btn-group btn-group-lg" data-toggle="buttons" input-group-lg">            
+    <label class="btn btn-primary btn-lg show3-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
+    <label class="btn btn-primary btn-lg hide3-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
+    <label class="btn btn-primary btn-lg hide3-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
 </div>
-<hr />                                                                  
+<div id="myCollapsible3" class="collapse">                                                                 
 <p>I speak and participate in my IEP meetings:</p>
-            <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline hide2-btn" type="radio" value="Yes">Yes
-</label>
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline show2-btn" type="radio" value="No">No
-</label>
-<label class="btn btn-primary btn-lg">
-    <input class="checkbox-inline hide2-btn" type="radio" value="Not Sure">Not Sure
-</label>
+<div class="btn-group btn-group-lg" data-toggle="buttons" input-group-lg">            
+    <label class="btn btn-primary btn-lg hide4-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
+    <label class="btn btn-primary btn-lg show4-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
+    <label class="btn btn-primary btn-lg hide4-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
 </div>
-<div id="myCollapsible2" data-toggle="buttons"> 
-            <p>No - Why not:</p>
-            <div data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="I didn't know I could">I didn't know I could
-</label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="I don’t want to speak at those meetings">I don’t want to speak at those meetings
-</label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Other">Other
-</label>
+<div id="myCollapsible4" class="collapse" data-toggle="buttons"> 
+    <p>No - Why not:</p>
+                                              
+<label class="btn btn-primary btn-lg btn-block"><input class="checkbox-inline" type="radio" value="I didn't know I could">I didn't know I could</label>
+<label class="btn btn-primary btn-lg btn-block"><input class="checkbox-inline" type="radio" value="I don’t want to speak at those meetings">I don’t want to speak at those meetings</label>
+<label class="btn btn-primary btn-lg btn-block"><input class="checkbox-inline" type="radio" value="Other">Other</label>
+</div>
+</div>
 </div>
 </div>
     </div>
