@@ -48,15 +48,15 @@ p {
     <!-- Trigger Button HTML -->
     <!--
     <p>I know what I want to do after high school?</p> 
-    <div class="btn-group btn-group-lg btn-group-justified" data-toggle="buttons" input-group-lg">
+    <div class="btn-group btn-group-lg" data-toggle="buttons" input-group-lg">
     <label class="btn btn-primary btn-lg show-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
     <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
     <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
     </div>                                                                                             
     -->
-    <!-- Collapsible Element HTML -->
+    <!-- Collapsible Element HTML -->    
     <!--
-    <div id="myCollapsible" class="collapse" data-toggle="buttons">
+<div id="myCollapsible" class="collapse" data-toggle="buttons">
 <p>I want to:</p>
   <label class="btn btn-lg btn-primary btn-block" role="button"><input type="checkbox" name="options" id="getajob" value="get a job">Get a job</label>
     <label class="btn btn-lg btn-primary btn-block" role="button"><input type="checkbox" value="continue my education">Continue my education</label>
@@ -65,8 +65,56 @@ p {
 
 <hr />
 -->
-<h3>Education</h3>
- <p>I want to continue my education.</p>
+<h3>Employment</h3>
+ <p>I want to get a job.  I know what kind of job I want to get.   
+</p>
+            <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="Yes">Yes
+</label>
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="No">No
+</label>
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
+</label>
+</div>                                                                                
+
+<p>I think I will need help working:   
+</p>
+            <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="Yes">Yes
+</label>
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="No">No
+</label>
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
+</label>
+</div> 
+<div class="input-wrapper">
+<p>If yes, I think I will need help working:   
+</p>
+           <div data-toggle="buttons" input-group-lg">
+<label class="btn btn-primary btn-lg btn-block">
+    <input class="checkbox-inline" type="radio" value="More Breaks">More Breaks
+</label>
+<label class="btn btn-primary btn-lg btn-block">
+    <input class="checkbox-inline" type="radio" value="Bigger Computer Screen">Bigger Computer Screen
+</label>
+<label class="btn btn-primary btn-lg btn-block">
+    <input class="checkbox-inline" type="radio" value="Be able to sit and stand as needed">Be able to sit and stand as needed
+</label>
+<label class="btn btn-primary btn-lg btn-block">
+    <input class="checkbox-inline" type="radio" value="Other: _________________">Other: _________________
+</label>
+<label class="btn btn-primary btn-lg btn-block">
+    <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
+</label>
+</div> 
+<p>I am interested in having a work experience while still in high school:   
+</p>
             <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
 <label class="btn btn-primary btn-lg">
     <input class="checkbox-inline" type="radio" value="Yes">Yes
@@ -78,73 +126,39 @@ p {
     <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
 </label>
 </div>
-<p>I know what I want to study.</p>
-    <div class="btn-group btn-group-lg btn-group-justified" data-toggle="buttons" input-group-lg">
-    <label class="btn btn-primary btn-lg show-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
-    <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
-    <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
-    </div>   
-<div id="myCollapsible" class="collapse" data-toggle="buttons">                                                                           
-If yes, I want to be:
-
-    <input type="text" class="form-control" placeholder="Please explain">
-
-
-<p>I want to go to:</p>
-            <div data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox" type="checkbox" value="4 year college">4 year college
+<p>I know what kind of work experience I want to have: 
+</p>
+<div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="Yes">Yes
 </label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox" type="checkbox" value="Community College">Community College
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="No">No
 </label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="checkbox" value="Trade/Business School">Trade/Business School
+<label class="btn btn-primary btn-lg">
+    <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
 </label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="checkbox" value="Vocational/Technical School">Vocational/Technical School
-</label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="checkbox" value="Specialized Training">Specialized Training
-</label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="checkbox" value="Continue Adult Education">Continue Adult Education
-</label>
-</div>  
 </div>
- 
- <p>I think I will need help in school:</p>
-            <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg show2-btn">
-    <input class="checkbox-inline show2-btn" type="radio" value="Yes">Yes
-</label>
-<label class="btn btn-primary btn-lg hide2-btn">
-    <input class="checkbox-inline hide2-btn" type="radio" value="No">No
-</label>
-<label class="btn btn-primary btn-lg hide2-btn">
-    <input class="checkbox-inline hide2-btn" type="radio" value="Not Sure">I'm Not Sure
-</label>
-</div>  
-<div id="myCollapsible2" class="collapse" data-toggle="buttons">
- <p>If yes, I will need:</p>
-            <div data-toggle="buttons" input-group-lg">
+<p>If yes, I want to: 
+</p>
+<div data-toggle="buttons" input-group-lg">
 <label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Help with note taking">Help with note taking
+    <input class="checkbox-inline" type="radio" value="Job Shadowing">Job Shadowing
 </label>
 <label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Longer time for texts">Longer time for texts
+    <input class="checkbox-inline" type="radio" value="Job Tryout">Job Tryout
 </label>
 <label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Longer time for assignments">Longer time for assignments
+    <input class="checkbox-inline" type="radio" value="Work Study">Work Study
 </label>
 <label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Other">Other: _________________________________
+    <input class="checkbox-inline" type="radio" value="Other: _________">Other: _________
 </label>
 <label class="btn btn-primary btn-lg btn-block">
     <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
 </label>
 </div>
-</div>
+
 
 </div>
 </div>
@@ -152,8 +166,8 @@ If yes, I want to be:
 </div>
     </div>
           <ul class="pager">
-  <li><a href="1.html">Previous</a></li>
-  <li><a href="3.html">Next</a></li>
+  <li><a href="2.html">Previous</a></li>
+  <li><a href="4.html">Next</a></li>
 </ul>
 </div>
 </body>
