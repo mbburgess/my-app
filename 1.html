@@ -14,17 +14,17 @@ $(document).ready(function(){
     $(".hide-btn").click(function(){ $("#myCollapsible").collapse('hide'); });
     $(".toggle-btn").click(function(){ $("#myCollapsible").collapse('toggle'); });
 
-    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show2'); });
-    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide2'); });
-    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle2'); });
+    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show'); });
+    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide'); });
+    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle'); });
     
-    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show3'); });
-    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide3'); });
-    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle3'); });
+    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show'); });
+    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide'); });
+    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle'); });
     
-    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show4'); });
-    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide4'); });
-    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle4'); });
+    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show'); });
+    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide'); });
+    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle'); });
 });
 </script> 
 <style type="text/css">
@@ -84,15 +84,17 @@ p {
     <label class="btn btn-primary btn-lg"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
     <label class="btn btn-primary btn-lg"><input type="radio" class="checkbox-inline" value="No">No</label>
     <label class="btn btn-primary btn-lg"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
-</div>
+
+    </div>
 <div>
+<hr />
  <p>I attend my IEP Meetings</p>
 <div class="btn-group btn-group-lg btn-group-justified" data-toggle="buttons" input-group-lg">            
     <label class="btn btn-primary btn-lg show2-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
     <label class="btn btn-primary btn-lg hide2-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
     <label class="btn btn-primary btn-lg hide2-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
 </div>
-    <div id="myCollapsible2" class="collapse" data-toggle="buttons">                                                                
+    <div id="myCollapsible2" class="collapse" data-toggle="buttons">                                                 <hr />               
 <p>I speak and participate in my IEP meetings:</p>
 <div class="btn-group btn-group-lg btn-group-justified" data-toggle="buttons" input-group-lg">            
     <label class="btn btn-primary btn-lg hide3-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
@@ -100,6 +102,7 @@ p {
     <label class="btn btn-primary btn-lg hide3-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
 </div>
 <div id="myCollapsible3" class="collapse" data-toggle="buttons"> 
+    <hr />
     <p>No - Why not:</p>
                                               
 <label class="btn btn-primary btn-lg btn-block"><input class="checkbox-inline" type="radio" value="I didn't know I could">I didn't know I could</label>

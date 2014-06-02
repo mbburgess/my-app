@@ -14,17 +14,17 @@ $(document).ready(function(){
     $(".hide-btn").click(function(){ $("#myCollapsible").collapse('hide'); });
     $(".toggle-btn").click(function(){ $("#myCollapsible").collapse('toggle'); });
 
-    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show2'); });
-    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide2'); });
-    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle2'); });
+    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show'); });
+    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide'); });
+    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle'); });
     
-    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show3'); });
-    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide3'); });
-    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle3'); });
+    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show'); });
+    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide'); });
+    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle'); });
     
-    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show4'); });
-    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide4'); });
-    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle4'); });
+    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show'); });
+    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide'); });
+    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle'); });
 });
 </script> 
 <style type="text/css">
@@ -78,18 +78,20 @@ p {
     <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
 </label>
 </div>
+<hr />
 <p>I know what I want to study.</p>
     <div class="btn-group btn-group-lg btn-group-justified" data-toggle="buttons" input-group-lg">
     <label class="btn btn-primary btn-lg show-btn"><input type="radio" class="checkbox-inline" value="Yes">Yes</label>
     <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="No">No</label>
     <label class="btn btn-primary btn-lg hide-btn"><input type="radio" class="checkbox-inline" value="Not Sure">Not Sure</label>
     </div>   
-<div id="myCollapsible" class="collapse" data-toggle="buttons">                                                                           
-If yes, I want to be:
+<div id="myCollapsible" class="collapse" data-toggle="buttons">                        
+
+    <p>If yes, I want to be:</p>
 
     <input type="text" class="form-control" placeholder="Please explain">
 
-
+<hr />
 <p>I want to go to:</p>
             <div data-toggle="buttons" input-group-lg">
 <label class="btn btn-primary btn-lg btn-block">
@@ -112,7 +114,7 @@ If yes, I want to be:
 </label>
 </div>  
 </div>
- 
+ <hr />
  <p>I think I will need help in school:</p>
             <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
 <label class="btn btn-primary btn-lg show2-btn">
@@ -126,21 +128,22 @@ If yes, I want to be:
 </label>
 </div>  
 <div id="myCollapsible2" class="collapse" data-toggle="buttons">
+    <hr />
  <p>If yes, I will need:</p>
             <div data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg btn-block">
+<label class="btn btn-primary btn-lg btn-block hide3-btn">
     <input class="checkbox-inline" type="radio" value="Help with note taking">Help with note taking
 </label>
-<label class="btn btn-primary btn-lg btn-block">
+<label class="btn btn-primary btn-lg btn-block hide3-btn">
     <input class="checkbox-inline" type="radio" value="Longer time for texts">Longer time for texts
 </label>
-<label class="btn btn-primary btn-lg btn-block">
+<label class="btn btn-primary btn-lg btn-block hide3-btn">
     <input class="checkbox-inline" type="radio" value="Longer time for assignments">Longer time for assignments
 </label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Other">Other: _________________________________
-</label>
-<label class="btn btn-primary btn-lg btn-block">
+<label class="btn btn-primary btn-lg btn-block toggle3-btn">
+    <input class="checkbox-inline" type="radio" value="Other">Other:</label>
+<div id="myCollapsible3" class="collapse"><input type="text" class="form-control" placeholder="Please explain">               </div>               
+<label style="margin-top:0.25em;" class="btn btn-primary btn-lg btn-block hide3-btn">
     <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
 </label>
 </div>

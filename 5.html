@@ -14,17 +14,17 @@ $(document).ready(function(){
     $(".hide-btn").click(function(){ $("#myCollapsible").collapse('hide'); });
     $(".toggle-btn").click(function(){ $("#myCollapsible").collapse('toggle'); });
 
-    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show2'); });
-    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide2'); });
-    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle2'); });
+    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show'); });
+    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide'); });
+    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle'); });
     
-    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show3'); });
-    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide3'); });
-    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle3'); });
+    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show'); });
+    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide'); });
+    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle'); });
     
-    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show4'); });
-    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide4'); });
-    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle4'); });
+    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show'); });
+    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide'); });
+    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle'); });
 });
 </script> 
 <style type="text/css">
@@ -68,27 +68,30 @@ p {
 <h3>Community Activities</h3>
 <p>I am interested in: 
 </p>
-<div data-toggle="buttons" input-group-lg">
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Volunteering at __________">Volunteering at __________
-</label>
-<label class="btn btn-primary btn-lg btn-block">
+<div data-toggle="buttons" class="input-group-lg">
+<label class="btn btn-primary btn-lg btn-block toggle-btn hide2-btn">
+    <input class="checkbox-inline" type="radio" value="Volunteering">Volunteering</label>
+    <div id="myCollapsible" class="collapse"><input type="text" class="form-control" placeholder="Please list">
+</div>   
+<label style="margin-top:0.25em;" class="btn btn-primary btn-lg btn-block hide-btn hide2-btn">
     <input class="checkbox-inline" type="radio" value="Helping with a campaign">Helping with a campaign
 </label>
-<label class="btn btn-primary btn-lg btn-block">
+<label class="btn btn-primary btn-lg btn-block hide-btn hide2-btn">
     <input class="checkbox-inline" type="radio" value="Attending community events">Attending community events
 </label>
-<label class="btn btn-primary btn-lg btn-block">
-    <input class="checkbox-inline" type="radio" value="Other: ________">Other: ________
+<label class="btn btn-primary btn-lg btn-block hide-btn toggle2-btn">
+    <input class="checkbox-inline" type="radio" value="Other">Other
 </label>
-<label class="btn btn-primary btn-lg btn-block">
+    <div id="myCollapsible2" class="collapse"><input type="text" class="form-control" placeholder="Please explain">
+    </div>   
+<label style="margin-top:0.25em;" class="btn btn-primary btn-lg btn-block hide-btn hide2-btn">
     <input class="checkbox-inline" type="radio" value="Not Sure">Not Sure
 </label>
 </div>
 
 <p>I know how to become involved in these activities:   
 </p>
-            <div class="btn-group btn-group-justified" data-toggle="buttons" input-group-lg">
+    <div class="btn-group btn-group-justified input-group-lg" data-toggle="buttons">
 <label class="btn btn-primary btn-lg">
     <input class="checkbox-inline" type="radio" value="Yes">Yes
 </label>
