@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Example of Twitter Bootstrap 3 Collapse Methods</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".show-btn").click(function(){ $("#myCollapsible").collapse('show'); });
+    $(".hide-btn").click(function(){ $("#myCollapsible").collapse('hide'); });
+    $(".toggle-btn").click(function(){ $("#myCollapsible").collapse('toggle'); });
+
+    $(".show2-btn").click(function(){ $("#myCollapsible2").collapse('show'); });
+    $(".hide2-btn").click(function(){ $("#myCollapsible2").collapse('hide'); });
+    $(".toggle2-btn").click(function(){ $("#myCollapsible2").collapse('toggle'); });
+    
+    $(".show3-btn").click(function(){ $("#myCollapsible3").collapse('show'); });
+    $(".hide3-btn").click(function(){ $("#myCollapsible3").collapse('hide'); });
+    $(".toggle3-btn").click(function(){ $("#myCollapsible3").collapse('toggle'); });
+    
+    $(".show4-btn").click(function(){ $("#myCollapsible4").collapse('show'); });
+    $(".hide4-btn").click(function(){ $("#myCollapsible4").collapse('hide'); });
+    $(".toggle4-btn").click(function(){ $("#myCollapsible4").collapse('toggle'); });
+});
+</script> 
+<style type="text/css">
+p {
+    background: #ffffff;
+    border: 0px solid #E1E1E8;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+</style>
+</head>
+<body>
+<img src="../DRC-Logo.png" alt="DRC Logo" />
+<div id="main-content" style="padding-left:1em;padding-right:1em;">
+    
+    <h1>DRC Applicaton</h1>
+    <!-- Trigger Button HTML -->
+                     <p>I am:
+        </p>   
+    <div class="btn-group-lg" data-toggle="buttons">
+<label class="btn btn-primary btn-lg btn-block show-btn hide2-btn hide3-btn">
+    <input class="checkbox-inline" type="radio" value="14">14
+</label>
+<div id="myCollapsible" class="collapse">
+<p>Your IEP team is required to begin transition planning at age 14.  You MUST be invited to IEP meetings when transition planning is discussed.  Your post-secondary dreams dictate necessary transition planning.  Your IEP team must develop a statement of required transition services to help you prepare you for adult life.  For more information on transition planning see FAQ # _____.</p>
+</div>
+<label class="btn btn-primary btn-lg btn-block hide-btn show2-btn hide3-btn">
+    <input class="checkbox-inline" type="radio" value="15">15
+</label>
+<div id="myCollapsible2" class="collapse"><p>Transition planning continues during your 15th year.   Transition planning should become more focused around your interests after high school.</p>
+</div>
+        <label class="btn btn-primary btn-lg btn-block hide-btn hide2-btn show3-btn">
+    <input class="checkbox-inline" type="radio" value="16">16 or older
+</label>
+<div id="myCollapsible3" class="collapse">
+<p>Your IEP team is required to have a transition goal developed by age 16.   The transition goal must ensure you have the necessary courses to graduate from high school and prepare you for post-secondary academics, working and living.  Your lifetime goals guide the transition goal.   The District is required to make a referral to Kansas Vocational Rehabilitation at age 16.  For more information on services available from Kansas Vocational Rehabilitation see FAQ #_________. </p>
+</div>
+</div>
+<hr />
+</div>
+          <ul class="pager">
+  <li><a href="1.html">Previous</a></li>
+  <li><a href="3.html">Next</a></li></ul>
+</div>
+</body>
+</html>                                		
