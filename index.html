@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>iTransition Application</title>
-      <icon src="res/ios/Icon-72.png" />
-      <platform name="android">
-              <icon src="res/android/drawable-ldpi/ic_launcher.png" density="ldpi" />
-              <icon src="res/android/drawable-mdpi/ic_launcher.png" density="mdpi" />
-              <icon src="res/android/drawable-hdpi/ic_launcher.png" density="hdpi" />
-              <icon src="res/android/drawable-xhdpi/ic_launcher.png" density="xhdpi" />
-     </platform>
-       <platform name="ios">
-              <!-- iOS 7.0+ -->
-              <!-- iPhone / iPod Touch  -->
-              <!-- iPad -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iTransition Application</title>
+<icon src="/res/ios/Icon-72.png" />
 
-              <!-- iOS 6.1 -->
-              <!-- Spotlight Icon -->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/drc.css">
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/drc.js"></script>
 
-              <!-- iPhone / iPod Touch -->
-              <icon src="res/ios/Icon.png" width="57" height="57" />
-              <icon src="res/ios/Icon@2x.png" width="114" height="114" />
-              <!-- iPad -->
-              <icon src="res/ios/Icon-72.png" width="72" height="72" />
-              <icon src="res/ios/Icon-72@2x.png" width="144" height="144" />
-              <!-- iPhone Spotlight and Settings Icon -->
-              <icon src="res/ios/Icon-small.png" width="29" height="29" />
-              <icon src="res/ios/Icon-small@2x.png" width="58" height="58" />
-              <!-- iPad Spotlight and Settings Icon -->
-              <icon src="res/ios/Icon-50.png" width="50" height="50" />
-              <icon src="res/ios/Icon-50@2x.png" width="100" height="100" />
-     </platform>
+<style type="text/css">
 
-    <!-- Bootstrap -->
-<link rel="stylesheet" href="http://app.drckansas.org/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://app.drckansas.org/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="http://app.drckansas.org/drc.css">
-<link rel="stylesheet" href="http://app.drckansas.org/font-awesome/css/font-awesome.min.css">
-
-<script type="text/javascript" src="http://app.drckansas.org/js/jquery.min.js"></script>
-<script src="http://app.drckansas.org/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://app.drckansas.org/drc.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-      
-
+.page h4 { font-size: 130%; }
+.page { display:none; }
+.page:first-child { display:block; }
+.page img { display:block; }
+.page .btn { float:right; clear:left; margin-bottom: 1em; margin-top: 1em;}
+</style>
       
       
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#instructionModal').modal('show');
+    });
+</script>
+
   </head>
-  <body>
+  <body >
       
-<!--<div role="navigation" id="nav" class="nav-collapse">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
--->      
-<img src="http://app.drckansas.org/itransition.png" alt="iTransition logo">
-    
-    <h1>iTransition Applicaton</h1>
-        
+<!-- Modal -->
+<div class="modal fade" id="instructionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <h2 class="modal-title">Instructions</h2>
+            </div>
+            <div class="modal-body"><center>
 
+            <div class="page"><h4>Answer the 13 questions by clicking your answers</h4>
+            <img src="/instructions/page1.png" style="display:block;">
+             <button type="button" class="btn btn-default next" onclick="$(this).parent().hide(); $(this).parent().next().show(); ">Next</button>
+
+            </div>
+
+            <div class="page"><h4>When you've answered all the questions on the page click "next"</h4>
+            <img src="/instructions/page2.png" >
+             <button type="button" class="btn btn-default next" onclick="$(this).parent().hide(); $(this).parent().next().show(); ">Next</button>
+            </div>
+
+            <div class="page"><h4>Change your mind?  Click "previous" and you can go back and change your answers.  The app will save your work.</h4>
+            <img src="/instructions/page3.png" >
+             <button type="button" class="btn btn-default next" onclick="$(this).parent().hide(); $(this).parent().next().show(); ">Next</button>
+            </div>
+
+            <div class="page"><h4>At the end, email your draft transition plan to yourself.  Print it off and take it with you to your IEP team meeting</h4>
+            <img src="/instructions/page4.png" >
+             <button type="button" class="btn btn-default next" onclick="$(this).parent().hide(); $(this).parent().next().show(); ">Next</button>
+            </div>
+
+            <div class="page"><h4>You will get a survey in your email asking for your input.  Please complete the brief survey.  We use this to improve the app for students in the future.  Thank
+ you!</h4>
+            <img src="/instructions/page5.png" >
+             <button type="button" class="btn btn-default next" data-dismiss="modal">Done</button>
+            </div>
+
+            </center></div>
+ 
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+    
+<div>
+<div id="logoblock"><dtml-var logoblock></div>
+<div id="pghead"><h1>iTransition</h1></div>
+</div>
+
+<ul style="font-size: 90%;">
+<li>This app is for students with disabilities with an IEP, ages 14 and older.
+<li>An IEP details your special education services.
+<li>The app produces a “Draft Transition Plan,” based on your answers.
+<li>A “Transition Plan” is part of your IEP document.
+<li>A “Transition Plan” is your road map to transition to adult life after high school.
+</ul>
         
-<p>Welcome to the iTransition App. This app is for students with disabilities with an IEP, ages 14 and older.</p>
-<p>An IEP details your special education services. This app produces a “Draft Transition Plan,” based on your answers.</p>
-<p>A “Transition Plan” is part of your IEP document. The plan is your road map to transition to adult life after high school.
-</p>
-        
-<a href="update2/1.html" type="button" class="btn btn-primary btn-lg btn-block">Start a Plan</a>
+<a href="update2/1.html" type="button" class="btn btn-primary btn-lg btn-block">Start a Transition Plan</a>
 
         <a href="faq.html" type="button" class="btn btn-primary btn-lg btn-block">Frequently Asked Questions</a>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-      <script>
-  var nav = responsiveNav(".nav-collapse");
-</script>
+
+
   </body>
 </html>
