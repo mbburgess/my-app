@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.drc.itransition"
+        versionCode = "2" 
+        version     = "1.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>iTransition</name>
+
+    <description>
+        Give us 10 minutes, this app will give you a Draft Transition Plan for your IEP. 
+    </description>
+
+    <author href="http://www.drckansas.org" email="info@drckansas.org">
+        Hardeep Shoker 
+    </author>
+
+</widget>
