@@ -1,0 +1,34 @@
+.btn>input[type=radio],
+.btn>input[type=checkbox] { display: none; }
+
+.it { font-style: italic; }
+
+p {
+    background: #ffffff;
+    border: 0px solid #E1E1E8;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.modal .modal-content {
+    max-height: 480px;
+    overflow-y: auto;
+    font-size: 70%;
+} 
+
+.btn { white-space: normal !important; }
+
+#pghead h1 {
+color: navy;
+}
+
+#logoblock img { width: 80px; }
+#logoblock { 
+   height: 95px;
+   width: 110px;
+   float:left; 
+   }
+#pghead {
+   height: 95px;
+   padding-top: 8px;
+   }
