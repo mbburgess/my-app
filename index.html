@@ -39,7 +39,7 @@ function serverCheck() {
         dataType: 'jsonp',
         timeout: 1000,
         statusCode: {
-            200: function (response) { serverUp(); }
+            200: function (response) { serverUp(); },
             0: function (response) { serverDown(); }
            }
        });
