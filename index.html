@@ -18,13 +18,14 @@
 var serverStatus_var = false;
 
 function serverStatus() {
-        serverCheck();
+        alert ('checking status');
         if (serverStatus_var == false) { alert ('This app requires an active internet connection.  Please retry after connecting. '); }
         return serverStatus_var;
         }
 
 function serverUp() {
         serverStatus_var = true;
+        alert ('server up');
         }
 
 function serverCheck() {
@@ -40,7 +41,9 @@ function serverCheck() {
        });
 }
 
-serverCheck();
+setInterval(function(){
+     serverCheck();
+},3000);
 </script>
 
 
