@@ -17,7 +17,6 @@
         Hardeep Shoker 
     </author>
     
-    <feature name="http://api.phonegap.com/1.0/network" />
     <access origin="*" />
     <gap:plugin name="org.apache.cordova.network-information"  />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
