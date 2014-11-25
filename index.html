@@ -48,15 +48,18 @@ function serverCheck() {
 
 $( document ).ready(function() {
         
-$.mobile.allowCrossDomainPages = true;
-
 setInterval(function(){
      serverCheck();
 },2000);
 
 });
 
+</script>
 
+<script>
+$(document).bind("mobileinit", function(){
+   $.mobile.allowCrossDomainPages = true;
+});
 </script>
 
 
