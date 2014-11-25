@@ -46,9 +46,14 @@ function serverCheck() {
 
 $( document ).ready(function() {
         
-setInterval(function(){
-     serverCheck();
-},2000);
+  document.addEventListener("online", serverUp, false);
+  document.addEventListener("offline", serverDown, false);
+  
+  if(navigator.network.connection.type == Connection.NONE) {
+	serverDown();
+} else {
+	serverUp();
+}
 
 });
 
