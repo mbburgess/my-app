@@ -18,7 +18,6 @@
 var serverStatus_var = false;
 
 function serverStatus() {
-        alert (serverStatus_var);
         if (serverStatus_var == false) { alert ('This app requires an active internet connection.  Please retry after connecting. '); }
         return serverStatus_var;
         }
@@ -49,11 +48,6 @@ function init() {
         
 </script>
 
-<script>
-$(document).bind("mobileinit", function(){
-   $.mobile.allowCrossDomainPages = true;
-});
-</script>
 
 
 <style type="text/css">
