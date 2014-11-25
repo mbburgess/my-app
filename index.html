@@ -18,29 +18,26 @@
 var serverStatus_var = false;
 
 function serverStatus() {
-	alert(navigator.connection.type);
         if (serverStatus_var == false) { alert ('This app requires an active internet connection.  Please retry after connecting. '); }
+	alert(navigator.connection.type);
+
         return serverStatus_var;
         }
 
 function serverUp() {
         serverStatus_var = true;
-        alert('up');
         }
         
 function serverDown() {
-        alert('down');
         serverStatus_var = false;
 }
 
-document.addEventListener("deviceready", init, false);
  
 function init() {
-	alert('go');
-  document.addEventListener("online", serverUp, false);
+        document.addEventListener("online", serverUp, false);
 	document.addEventListener("offline", serverDown, false);
  
-	if(navigator.network.connection.type == Connection.NONE) {
+	if(navigator.connection.type == Connection.NONE) {
 		serverDown();
 	} else {
 		serverUp();
@@ -48,6 +45,8 @@ function init() {
  
 }
         
+document.addEventListener("deviceready", init, false);
+
 </script>
 
 
