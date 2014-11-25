@@ -10,59 +10,19 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="drc.css">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/drc.js"></script>
 
 <script type="text/javascript">
-var serverStatus_var = false;
-
-function checkConnection() {
-    var networkState = navigator.connection.type;
-
-    var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
-    states[Connection.ETHERNET] = 'Ethernet connection';
-    states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
-
-    alert('Connection type: ' + states[networkState]);
-}
-
 
 function serverStatus() {
-        //if (serverStatus_var == false) { alert ('This app requires an active internet connection.  Please retry after connecting. '); }
-        checkConnection();
-        return serverStatus_var;
+        if (navigator.connection.type == Connection.NONE) { 
+        	alert ('This app requires an active internet connection.  Please retry after connecting. ');
+		return false;
+        	}
+        return true;
         }
-
-function serverUp() {
-        serverStatus_var = true;
-        }
-        
-function serverDown() {
-        serverStatus_var = false;
-}
-
- 
-function init() {
-        document.addEventListener("online", serverUp, false);
-	document.addEventListener("offline", serverDown, false);
- 
-	if(navigator.connection.type == Connection.NONE) {
-		serverDown();
-	} else {
-		serverUp();
-	}
- 
-}
-        
-document.addEventListener("deviceready", init, false);
 
 </script>
 
