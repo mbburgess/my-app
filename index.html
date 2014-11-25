@@ -22,8 +22,7 @@ function jumpTo(tgt) {
         	alert ('This app requires an active internet connection.  Please retry after connecting. ');
 		return false;
         	}
-        window.open(encodeURI(tgt), '_system');
-        alert(tgt);
+        window.open(tgt, '_system',location='no');
         }
    
 </script>
