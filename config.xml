@@ -16,5 +16,8 @@
     <author href="http://www.drckansas.org" email="info@drckansas.org">
         Hardeep Shoker 
     </author>
+    
+    <feature name="http://api.phonegap.com/1.0/network" />
+
 
 </widget>
