@@ -23,7 +23,7 @@
         Domains are assumed blocked unless set otherwise
          -->
 
-    <access origin="http://www.itransitionks.org"/> <!-- allow itransistion pages -->
+    <access origin=".*"/> <!-- allow itransistion pages -->
 
         <!-- <access origin="https://example.com" /> allow any secure requests to example.com -->
         <!-- <access origin="https://example.com" subdomains="true" /> such as above, but including subdomains, such as www -->
