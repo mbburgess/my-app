@@ -39,10 +39,8 @@ function serverCheck() {
         dataType: 'jsonp',
         type: 'HEAD',
         timeout: 1000,
-        statusCode: {
-            200: function (response) { serverUp(); },
-            0: function (response) { serverDown(); }
-           }
+        success: serverUp,
+        error: serverDown
        });
 }
 
