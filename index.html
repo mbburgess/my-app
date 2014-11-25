@@ -36,7 +36,6 @@ function serverDown() {
 function serverCheck() {
      $.ajax({
         url: 'http://www.itransitionks.org',
-        type: 'HEAD',
         dataType: 'jsonp',
         timeout: 4000,
         statusCode: {
