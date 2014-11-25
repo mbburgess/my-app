@@ -37,7 +37,8 @@ function serverCheck() {
      $.ajax({
         url: 'http://www.itransitionks.org',
         dataType: 'jsonp',
-        timeout: 4000,
+        type: 'HEAD',
+        timeout: 3000,
         statusCode: {
             200: function (response) { serverUp(); },
             0: function (response) { serverDown(); }
@@ -49,7 +50,7 @@ $( document ).ready(function() {
         
 setInterval(function(){
      serverCheck();
-},5000);
+},4000);
 
 });
 
