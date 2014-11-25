@@ -20,9 +20,9 @@
 function serverStatus() {
         if (navigator.connection.type == Connection.NONE) { 
         	alert ('This app requires an active internet connection.  Please retry after connecting. ');
-		return true;
+		return false;
         	}
-        return false;
+        return true;
         }
    
 </script>
@@ -108,9 +108,9 @@ body { font-size: 18px; }
 <li>A “Transition Plan” is your road map to transition to adult life after high school.
 </ul>
         
-<a onClick="alert(serverStatus()); return serverStatus();" href="http://www.itransitionks.org/update2/1.html" type="button" class="btn btn-primary btn-lg btn-block">Start a Transition Plan</a>
+<a onClick="serverStatus();" href="http://www.itransitionks.org/update2/1.html" type="button" class="btn btn-primary btn-lg btn-block">Start a Transition Plan</a>
 
-        <a onClick="return serverStatus();" href="http://www.itransitionks.org/faq.html" type="button" class="btn btn-primary btn-lg btn-block">Frequently Asked Questions</a>
+        <a onClick="serverStatus();" href="http://www.itransitionks.org/faq.html" type="button" class="btn btn-primary btn-lg btn-block">Frequently Asked Questions</a>
 
 
 <p style="text-align:center;">&copy;2014 Disability Rights Center of Kansas</p>
