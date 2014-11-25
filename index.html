@@ -35,6 +35,7 @@ function serverDown() {
 document.addEventListener("deviceready", init, false);
  
 function init() {
+	alert('go');
   document.addEventListener("online", serverUp, false);
 	document.addEventListener("offline", serverDown, false);
  
