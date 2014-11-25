@@ -33,30 +33,20 @@ function serverDown() {
         serverStatus_var = false;
 }
 
-function serverCheck() {
-     $.ajax({
-        url: 'http://www.itransitionks.org/',
-        dataType: 'jsonp',
-        type: 'HEAD',
-        timeout: 1000,
-        success: serverUp,
-        error: serverDown
-       });
-}
-
-$( document ).ready(function() {
-        
+document.addEventListener("deviceready", init, false);
+ 
+function init() {
   document.addEventListener("online", serverUp, false);
-  document.addEventListener("offline", serverDown, false);
-  
-  if(navigator.network.connection.type == Connection.NONE) {
-	serverDown();
-} else {
-	serverUp();
+	document.addEventListener("offline", serverDown, false);
+ 
+	if(navigator.network.connection.type == Connection.NONE) {
+		serverDown();
+	} else {
+		serverUp();
+	}
+ 
 }
-
-});
-
+        
 </script>
 
 <script>
