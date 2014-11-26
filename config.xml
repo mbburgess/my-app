@@ -2,8 +2,8 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.spoinnakerweb.com.drc-tpa"
-        versionCode = "197" 
-        version     = "1.2" >
+        versionCode = "198" 
+        version     = "1.4" >
 
     <!-- versionCode is optional and Android only -->
 
