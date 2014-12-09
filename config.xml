@@ -20,8 +20,9 @@
     <access origin="*" />
     <gap:plugin name="org.apache.cordova.network-information"  />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
-    <preference name="BackupWebStorage" value="none" />
+
 
 
 
 </widget>
+    <preference name="BackupWebStorage" value="none" />
