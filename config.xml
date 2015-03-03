@@ -6,8 +6,9 @@
         version     = "1.4.1" >
 
     <!-- versionCode is optional and Android only -->
-    <preference name="BackupWebStorage" value="none" />
-    <preference name="phonegap-version" value="3.7.0" /> 
+    <preference name="BackupWebStorage" value="local"/>
+    
+    <preference name="phonegap-version" value="3.6.3" /> 
     <name>iTransition</name>
 
     <description>
