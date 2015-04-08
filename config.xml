@@ -2,8 +2,8 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.spoinnakerweb.com.drc-tpa"
-        versionCode = "199" 
-        version     = "1.4.1" >
+        versionCode = "200" 
+        version     = "1.4.2" >
 
     <!-- versionCode is optional and Android only -->
     <preference name="BackupWebStorage" value="local"/>
