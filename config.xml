@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.spoinnakerweb.com.drc-tpa"
         versionCode = "200" 
-        version     = "1.4.2" >
+        version     = "1.4.2.1" >
 
     <!-- versionCode is optional and Android only -->
     
