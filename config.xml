@@ -6,7 +6,7 @@
         version     = "1.4.2.1" >
 
     <!-- versionCode is optional and Android only -->
-    
+    <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="BackupWebStorage" value="none" />
     
     <preference name='phonegap-version' value='cli-5.1.1' /> 
