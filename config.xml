@@ -9,7 +9,7 @@
     <preference name="iosPersistentFileLocation" value="library-nosync" />
     <preference name="BackupWebStorage" value="none" />
     
-    <preference name='phonegap-version' value='cli-5.2' /> 
+    <preference name="phonegap-version" value="cli-5.2.0" />
     <name>iTransition</name>
 
     <description>
