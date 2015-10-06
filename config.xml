@@ -2,14 +2,14 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.spoinnakerweb.com.drc-tpa"
-        versionCode = "200" 
-        version     = "1.4.3" >
+        versionCode = "201" 
+        version     = "1.4.4" >
 
     <!-- versionCode is optional and Android only -->
     <preference name="iosPersistentFileLocation" value="library-nosync" />
     <preference name="BackupWebStorage" value="none" />
     
-    <preference name='phonegap-version' value='cli-5.1.1' /> 
+    <preference name='phonegap-version' value='cli-5.2' /> 
     <name>iTransition</name>
 
     <description>
@@ -24,7 +24,8 @@
     <gap:plugin name="org.apache.cordova.network-information"  />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
 
-
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
 
 
 </widget>
