@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.spoinnakerweb.com.drc-tpa"
+        id          = "com.drc.itransition"
         versionCode = "203" 
         version     = "1.4.6" >
 
